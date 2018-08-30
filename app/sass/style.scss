@@ -4,14 +4,16 @@
     width: 100px;
     fill: inherit;
     stroke: inherit;
+    width: 52px;
+    height: 52px;
     transform: scale(1);
     transition: transform .2s ease, fill 1s ease;
 
-    &.icon-smartphone {
+    &.icon-groups {
         fill: #e74c3c;
     }
 
-    &.icon-salon {
+    &.icon-imac {
         fill: #34495e;
 
         &:hover {
@@ -20,7 +22,7 @@
         }
     }
 
-    &.icon-wifi-signal {
+    &.icon-cart {
         fill: #bdc3c7;
         height: 50px;
         width: 50px;
@@ -41,12 +43,12 @@ ul {
         margin-right: 40px;
         margin-bottom: 40px;
 
-        .icon-game-controller {
+        .icon-analytics {
             fill: #2ecc71;
             transition: opacity .2s ease;
         }
 
-        .icon-salon-1 {
+        .icon-calendar {
             transition: opacity .2s ease;
             fill: #9b59b6  ;
             opacity: 0;
@@ -56,13 +58,13 @@ ul {
         }
 
         &:hover {
-            .icon-game-controller {
+            .icon-analytics {
                 opacity: 0;
             }
-            .icon-salon-1 {
+            .icon-calendar {
                 opacity: 1;
             }
-            .icon-smartphone {
+            .icon-groups {
                 fill: #f39c12;
                 transform: rotateZ(90deg);
             }
