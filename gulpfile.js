@@ -35,7 +35,7 @@ gulp.task('svg-sprite', function() {
                 symbols: 'symbol_sprite.html'
             }
         }))
-        .pipe(gulp.dest("app/img/icon/"));
+        .pipe(gulp.dest("app/img/svg-icon/"));
 });
 
 gulp.task('scss', function() {

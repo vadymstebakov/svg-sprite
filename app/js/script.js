@@ -2,7 +2,7 @@ $(document).ready(function() {;
     (function(window, document) {
         'use strict';
 
-        var file = 'img/icon/symbol_sprite.html',
+        var file = 'img/svg-icon/symbol_sprite.html',
             revision = 1;
 
         if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
