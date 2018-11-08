@@ -4,33 +4,32 @@
     width: 100px;
     fill: inherit;
     stroke: inherit;
-    width: 52px;
-    height: 52px;
-    transform: scale(1);
-    transition: transform .2s ease, fill 1s ease;
+    width: 50px;
+    height: 50px;
+}
 
-    &.icon-groups {
-        fill: #e74c3c;
-    }
+.icon {
+	transition: opacity .2s ease;
+}
 
-    &.icon-imac {
-        fill: #34495e;
+.bed {
+	position: relative;
 
-        &:hover {
-            fill: #16a085;
-            transform: scale(1.1);
-        }
-    }
+	&:hover .icon-bedroom {
+		opacity: 0;
+	}
 
-    &.icon-cart {
-        fill: #bdc3c7;
-        height: 50px;
-        width: 50px;
+	&:hover .icon-bedroom_active {
+		opacity: 1;
+	}
+}
 
-        &:hover {
-            fill: #6c5ce7;
-        }
-    }
+.icon-bedroom_active {
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	
 }
 
 
@@ -42,37 +41,14 @@ ul {
         display: inline-block;
         margin-right: 40px;
         margin-bottom: 40px;
-
-        .icon-analytics {
-            fill: #2ecc71;
-            transition: opacity .2s ease;
-        }
-
-        .icon-calendar {
-            transition: opacity .2s ease;
-            fill: #9b59b6  ;
-            opacity: 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        &:hover {
-            .icon-analytics {
-                opacity: 0;
-            }
-            .icon-calendar {
-                opacity: 1;
-            }
-            .icon-groups {
-                fill: #f39c12;
-                transform: rotateZ(90deg);
-            }
-        }
     }
 }
 
 a {
     display: block;
     position: relative;
+}
+
+.cls-1 {
+    fill: #020203;
 }
